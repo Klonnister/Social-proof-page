@@ -252,6 +252,11 @@ main {
     }
 }
 
+@media only screen and (max-height: 40rem) {
+    footer {
+        display: none;
+    }
+}
 
 
 
