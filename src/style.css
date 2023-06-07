@@ -1,0 +1,278 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 400;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0 1.5rem;
+}
+
+image {
+    max-width: 100%;
+}
+
+blockquote {
+    margin-inline: 0;
+}
+
+main {
+    padding: 4rem 0rem;
+}
+
+/* ---------------Description section--------------- */
+
+.description h1 {
+    color: var(--dark-magenta);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+}
+
+.description p {
+    color: var(--grayish-magenta);
+    text-align: center;
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-bottom: 2.5rem;
+    margin-inline: auto;
+}
+
+/* ---------------Ratings section--------------- */ 
+
+.ratings {
+    margin-bottom: 2.5rem;
+}
+
+.ratings .rating {
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ratings .rating .stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.50rem;
+    margin-bottom: 0.75em;
+}
+
+.ratings .rating p {
+    color: var(--dark-magenta);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ---------------Comments section--------------- */
+
+.comments .comment {
+    background-color: var(--dark-magenta);
+    padding: 2.5rem 2rem 1.75rem 2rem;
+    border-radius: 0.50rem;
+    margin-bottom: 1rem;
+}
+
+/* Header */ 
+.comments .comment .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.comments .comment .header img {
+    width: 2.5rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.comments .comment .header .name :first-child {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.comments .comment .header .name :last-child {
+    color: var(--soft-pink);
+    font-weight: 500;
+}
+
+/* Comment content */ 
+
+.comments .comment .content {
+    color: white;
+    line-height: 1.5em;
+    padding-right: 0.75rem;
+}
+
+@media only screen and (min-width: 53rem) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+    }
+
+    main {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .description h1 {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        max-width: 14ch;
+        text-align: start;
+    }
+
+    .description p {
+        margin: 0;
+        margin-bottom: 0;
+        max-width: 40ch;
+        text-align: start;
+    }
+
+    .ratings {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        align-self: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .ratings .rating {
+        width: 75%;   
+    }
+
+    .ratings .r1 {
+        margin-right: 4rem;
+    }
+
+    .ratings .r2 {
+        margin-right: 2rem;
+    }
+
+    .ratings .r3 {
+        margin-bottom: 0;
+    }
+
+
+    .comments {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .comments .comment {
+        width: 31%;
+        margin-bottom: 0
+    }
+
+    .comments .c2 {
+        margin-top: 1rem;
+    }
+
+    .comments .c3 {
+        margin-top: 2rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media only screen and (min-width: 64rem) {
+        body {
+            padding: 2rem 5rem;
+        }
+
+        .ratings {
+        margin-bottom: 4rem;
+        }
+
+        .ratings .rating {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ratings .rating .stars {
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 90rem) {
+            body {
+                padding: 2rem 7rem;
+                font-size: 1.1rem
+            }
+
+            .ratings .r1 {
+                margin-right: 6rem;
+            }
+        
+            .ratings .r2 {
+                margin-right: 3rem;
+            }
+
+            .comments .comment {
+                width: 31%;
+            }
+        }
+    }
+}
+
+
+
+
+/* ---------------Footer--------------- */
+
+footer {
+    margin-inline: auto;
+    background-color: var(--light-grayish-magenta);
+    padding: 0.10rem;
+    border-radius: 0.25rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+ }
+.attribution a {
+    color:darkorchid;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--grayish-magenta);
+}
