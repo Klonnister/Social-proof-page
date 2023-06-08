@@ -61,4 +61,4 @@ I used @import in CSS for the first time and learned how to add different font w
 ## Author
 
 - Frontend Mentor - [Klonnister](https://www.frontendmentor.io/profile/Klonnister)
-- Twitter - [dennis_herrera_f](https://www.instagram.com/dennis_herrera_f/)
+- Instagram - [dennis_herrera_f](https://www.instagram.com/dennis_herrera_f/)
